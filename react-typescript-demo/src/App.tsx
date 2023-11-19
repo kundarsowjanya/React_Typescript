@@ -1,5 +1,7 @@
 
 import './App.css';
+import { Button } from './components/Button';
+import { Input } from './components/Input';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
@@ -29,11 +31,10 @@ function App() {
   ]
   return (
     <div className="App">
-     <Status status='loading'/>
-     <Oscar>
-     <Heading>Placeholder text</Heading>
-     </Oscar>
-     <Greet name="sowjanya"  isLoggedIn={true}/>
+     <Button handleClick={(event,id)=>{
+       console.log("Button clicked",event,id)
+     }}/>
+     <Input value='' handleChange={(event)=>{console.log(event)}}/>
     
     </div>
   );
