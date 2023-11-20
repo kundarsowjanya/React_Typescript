@@ -9,7 +9,7 @@ import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { Container } from './components/Container';
-import { LoggedIn } from './components/LoggedIn';
+import { LoggedIn } from './components/state/LoggedIn';
 
 function App() {
   const personName={
@@ -33,7 +33,7 @@ function App() {
   ]
   return (
     <div className="App">
-   <LoggedIn/>
+     
     
     </div>
   );
