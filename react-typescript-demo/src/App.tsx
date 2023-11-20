@@ -8,6 +8,7 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
+import { Container } from './components/Container';
 
 function App() {
   const personName={
@@ -31,10 +32,7 @@ function App() {
   ]
   return (
     <div className="App">
-     <Button handleClick={(event,id)=>{
-       console.log("Button clicked",event,id)
-     }}/>
-     <Input value='' handleChange={(event)=>{console.log(event)}}/>
+     <Container styles={{border:"1px solid black",padding:"1rem"}}/>
     
     </div>
   );
